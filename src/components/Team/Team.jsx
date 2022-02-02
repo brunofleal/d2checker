@@ -5,6 +5,8 @@ import Medal from '../Medal';
 
 import ranksLogic from '../../service/ranksLogic'
 
+import strings from '../../resources/strings/strings'
+
 export default function Team({name, teamMMRCallback}) {
   const [avgRank, setAvgRank] = useState(0);
   const [avgStars, setAvgStars] = useState(0);
@@ -63,7 +65,7 @@ export default function Team({name, teamMMRCallback}) {
         <MedalSelector updateMMRCallback={updateMMRCallback} pos={4}></MedalSelector>
         <MedalSelector updateMMRCallback={updateMMRCallback} pos={5}></MedalSelector>
         <hr style={{width:"180px"}}></hr>
-        <h3>Avg. MMR: {avgMMR >- 1 ? Math.floor(avgMMR):"?"}</h3>
+        <h3>{strings.texts.avgMMR}: {avgMMR >- 1 ? Math.floor(avgMMR):"?"}</h3>
         <Medal rank={avgRank} stars={avgStars}></Medal>
     </Grid>
   </div>

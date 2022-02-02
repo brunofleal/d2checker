@@ -3,6 +3,7 @@ import MedalSelector from '../MedalSelector';
 import ResultsTable from '../ResultsTable';
 import Team from '../Team';
 import './MainPage.css'
+import strings from '../../resources/strings/strings';
 
 
 export default function MainPage() {
@@ -20,7 +21,8 @@ export default function MainPage() {
   return (
     <div className='container'>
         <div className='top-header'>
-          <h1>MMR avg and disparity calculator</h1>
+          <h1>{strings.texts.pagetitle}</h1>
+          <h4 style={{marginTop:"-20px"}}>{strings.texts.pageDescription}</h4>
         </div>
         <div className='box-container'>
           <div className='vertical-divider'/>

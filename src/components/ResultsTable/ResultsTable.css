@@ -1,5 +1,4 @@
 .results-container {
-  margin: 10px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -8,6 +7,8 @@
 }
 
 .vertical-divider-res {
+  margin-left: 10px;
+  margin-right: 10px;
   height: 100%;
   width: 5px;
   background-color: #35858b;

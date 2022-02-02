@@ -8,6 +8,8 @@ import WarningIcon from '@mui/icons-material/Warning';
 import imgOk from '../../resources/misc/success/1.jpg'
 import imgNotOk from '../../resources/misc/fail/1.jpg'
 
+import strings from '../../resources/strings/strings'
+
 
 export default function ResultsTable({MMRs}) {
     console.log(MMRs)
@@ -78,7 +80,7 @@ function DisparityList({list, name}) {
         direction="column"
         justifyContent="center"
         alignItems="center">
-        <h2>Disparities {name}</h2>
+        <h2>{strings.texts.problems} {name}</h2>
         <Box style={{width:"210px"}}>
             {list.map((element) =>{
                 return (
