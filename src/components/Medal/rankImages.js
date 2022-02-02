@@ -1,48 +1,48 @@
-import unranked from '../../resources/SeasonalRank0-0.png'
+import unranked from '../../resources/medals/SeasonalRank0-0.png'
 
-import herald1 from '../../resources/SeasonalRank1-1.png';
-import herald2 from '../../resources/SeasonalRank1-2.png';
-import herald3 from '../../resources/SeasonalRank1-3.png';
-import herald4 from '../../resources/SeasonalRank1-4.png';
-import herald5 from '../../resources/SeasonalRank1-5.png';
+import herald1 from '../../resources/medals/SeasonalRank1-1.png';
+import herald2 from '../../resources/medals/SeasonalRank1-2.png';
+import herald3 from '../../resources/medals/SeasonalRank1-3.png';
+import herald4 from '../../resources/medals/SeasonalRank1-4.png';
+import herald5 from '../../resources/medals/SeasonalRank1-5.png';
 
-import guardian1 from '../../resources/SeasonalRank2-1.png';
-import guardian2 from '../../resources/SeasonalRank2-2.png';
-import guardian3 from '../../resources/SeasonalRank2-3.png';
-import guardian4 from '../../resources/SeasonalRank2-4.png';
-import guardian5 from '../../resources/SeasonalRank2-5.png';
+import guardian1 from '../../resources/medals/SeasonalRank2-1.png';
+import guardian2 from '../../resources/medals/SeasonalRank2-2.png';
+import guardian3 from '../../resources/medals/SeasonalRank2-3.png';
+import guardian4 from '../../resources/medals/SeasonalRank2-4.png';
+import guardian5 from '../../resources/medals/SeasonalRank2-5.png';
 
-import crusader1 from '../../resources/SeasonalRank3-1.png';
-import crusader2 from '../../resources/SeasonalRank3-2.png';
-import crusader3 from '../../resources/SeasonalRank3-3.png';
-import crusader4 from '../../resources/SeasonalRank3-4.png';
-import crusader5 from '../../resources/SeasonalRank3-5.png';
+import crusader1 from '../../resources/medals/SeasonalRank3-1.png';
+import crusader2 from '../../resources/medals/SeasonalRank3-2.png';
+import crusader3 from '../../resources/medals/SeasonalRank3-3.png';
+import crusader4 from '../../resources/medals/SeasonalRank3-4.png';
+import crusader5 from '../../resources/medals/SeasonalRank3-5.png';
 
-import archon1 from '../../resources/SeasonalRank4-1.png';
-import archon2 from '../../resources/SeasonalRank4-2.png';
-import archon3 from '../../resources/SeasonalRank4-3.png';
-import archon4 from '../../resources/SeasonalRank4-4.png';
-import archon5 from '../../resources/SeasonalRank4-5.png';
+import archon1 from '../../resources/medals/SeasonalRank4-1.png';
+import archon2 from '../../resources/medals/SeasonalRank4-2.png';
+import archon3 from '../../resources/medals/SeasonalRank4-3.png';
+import archon4 from '../../resources/medals/SeasonalRank4-4.png';
+import archon5 from '../../resources/medals/SeasonalRank4-5.png';
 
-import legend1 from '../../resources/SeasonalRank5-1.png';
-import legend2 from '../../resources/SeasonalRank5-2.png';
-import legend3 from '../../resources/SeasonalRank5-3.png';
-import legend4 from '../../resources/SeasonalRank5-4.png';
-import legend5 from '../../resources/SeasonalRank5-5.png';
+import legend1 from '../../resources/medals/SeasonalRank5-1.png';
+import legend2 from '../../resources/medals/SeasonalRank5-2.png';
+import legend3 from '../../resources/medals/SeasonalRank5-3.png';
+import legend4 from '../../resources/medals/SeasonalRank5-4.png';
+import legend5 from '../../resources/medals/SeasonalRank5-5.png';
 
-import ancient1 from '../../resources/SeasonalRank6-1.png';
-import ancient2 from '../../resources/SeasonalRank6-2.png';
-import ancient3 from '../../resources/SeasonalRank6-3.png';
-import ancient4 from '../../resources/SeasonalRank6-4.png';
-import ancient5 from '../../resources/SeasonalRank6-5.png';
+import ancient1 from '../../resources/medals/SeasonalRank6-1.png';
+import ancient2 from '../../resources/medals/SeasonalRank6-2.png';
+import ancient3 from '../../resources/medals/SeasonalRank6-3.png';
+import ancient4 from '../../resources/medals/SeasonalRank6-4.png';
+import ancient5 from '../../resources/medals/SeasonalRank6-5.png';
 
-import divine1 from '../../resources/SeasonalRank7-1.png';
-import divine2 from '../../resources/SeasonalRank7-2.png';
-import divine3 from '../../resources/SeasonalRank7-3.png';
-import divine4 from '../../resources/SeasonalRank7-4.png';
-import divine5 from '../../resources/SeasonalRank7-5.png';
+import divine1 from '../../resources/medals/SeasonalRank7-1.png';
+import divine2 from '../../resources/medals/SeasonalRank7-2.png';
+import divine3 from '../../resources/medals/SeasonalRank7-3.png';
+import divine4 from '../../resources/medals/SeasonalRank7-4.png';
+import divine5 from '../../resources/medals/SeasonalRank7-5.png';
 
-import immortal from '../../resources/SeasonalRankTop0.png';
+import immortal from '../../resources/medals/SeasonalRankTop0.png';
 
 
 let rankImages = [];

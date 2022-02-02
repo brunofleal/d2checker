@@ -1,0 +1,20 @@
+.results-container {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.vertical-divider-res {
+  height: 100%;
+  width: 5px;
+  background-color: #35858b;
+}
+
+.status-image {
+  max-width: auto;
+  width: 200px;
+  height: auto;
+}

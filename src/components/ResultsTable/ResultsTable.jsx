@@ -1,7 +1,12 @@
-import { Button, Box, ButtonGroup } from '@mui/material';
+import { Icon, Box, Grid } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import ranksLogic from '../../service/ranksLogic'
+import Medal from '../Medal';
+import './ResultsTable.css';
 
+import WarningIcon from '@mui/icons-material/Warning';
+import imgOk from '../../resources/misc/success/1.jpg'
+import imgNotOk from '../../resources/misc/fail/1.jpg'
 
 
 export default function ResultsTable({MMRs}) {
@@ -11,7 +16,6 @@ export default function ResultsTable({MMRs}) {
 
 
     function compileListOfDisparities(MMRList) {
-        console.log("compile")
         let disps = [];
         for (let i = 0; i < 5; i++) {
             for (let j = i; j < 5; j++) {
@@ -25,7 +29,6 @@ export default function ResultsTable({MMRs}) {
                 }
             }
         }
-
         return disps;
     }
 
@@ -41,14 +44,54 @@ export default function ResultsTable({MMRs}) {
 
 
     return(
-        <div style={{margin:'10px'}}>
-            <h2>{MMRs.radiant.join('|')}</h2>
-            <h2>{MMRs.dire.join('|')}</h2>
+        <div className='results-container'>
+
+        { disparitiesRadiant.length > 0  ?
+            <React.Fragment>
+                <DisparityList list={disparitiesRadiant} name={"Radiant"}></DisparityList>
+                <div className='vertical-divider-res'/>
+            </React.Fragment>
+        : null }
+
+        { disparitiesDire.length > 0  ?
+            <React.Fragment>
+                <DisparityList list={disparitiesDire} name={"Dire"}></DisparityList>
+                <div className='vertical-divider-res'/>
+            </React.Fragment>
+
+        : null }
+
+        <div className='status-image'>
+            <img src={disparitiesDire.length || disparitiesRadiant.length > 0 ?imgNotOk:imgOk} alt={''}></img>
+        </div>
+
         </div>
     );
 
 };
 
-function Disparity({mmr1, mmr2}) {
+function DisparityList({list, name}) {
+
+    return (
+    <div style={{display:'flex', float:'left'}}>
+    <Grid container
+        direction="column"
+        justifyContent="center"
+        alignItems="center">
+        <h2>Disparities {name}</h2>
+        <Box style={{width:"210px"}}>
+            {list.map((element) =>{
+                return (
+                <div style={{display:'flex', alignItems: "center", justifyContent: "center"}}>
+                    <Medal mmr={element.mmr1}></Medal>
+                    <Medal mmr={element.mmr2}></Medal>
+                    <WarningIcon sx={{ color: "red", marginLeft: "10px" }}></WarningIcon>
+                </div>
+                )
+            })}
+        </Box>
+    </Grid>
+    </div>
+    );
 
 }

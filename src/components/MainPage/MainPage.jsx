@@ -29,6 +29,7 @@ export default function MainPage() {
           <Team name="Dire" teamMMRCallback={teamMMRCallback}></Team>
           <div className='vertical-divider'/>
           <ResultsTable MMRs={{radiant:radiantMMRs, dire:direMMRs}}></ResultsTable>
+
         </div>
     </div>
   );
