@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/d2checker/static/css/main.dee113a4.css",
+    "main.css": "/d2checker/static/css/main.97a1cd45.css",
     "main.js": "/d2checker/static/js/main.901446c6.js",
     "static/js/787.006a23a3.chunk.js": "/d2checker/static/js/787.006a23a3.chunk.js",
     "static/media/SeasonalRankTop0.png": "/d2checker/static/media/SeasonalRankTop0.b86a3584b4c0240ba734.png",
@@ -42,12 +42,12 @@
     "static/media/SeasonalRank1-2.png": "/d2checker/static/media/SeasonalRank1-2.d8e80322d939da6701cb.png",
     "static/media/SeasonalRank1-1.png": "/d2checker/static/media/SeasonalRank1-1.c085afa9606ebcbef9e4.png",
     "index.html": "/d2checker/index.html",
-    "main.dee113a4.css.map": "/d2checker/static/css/main.dee113a4.css.map",
+    "main.97a1cd45.css.map": "/d2checker/static/css/main.97a1cd45.css.map",
     "main.901446c6.js.map": "/d2checker/static/js/main.901446c6.js.map",
     "787.006a23a3.chunk.js.map": "/d2checker/static/js/787.006a23a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dee113a4.css",
+    "static/css/main.97a1cd45.css",
     "static/js/main.901446c6.js"
   ]
 }
