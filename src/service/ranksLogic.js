@@ -5,6 +5,8 @@ const UNRANKED_MMR = -1;
 const IMMORTAL_MMR = 5650;
 const DIVINE_MMR = 4620;
 const MAXIMUM_MMR_DIFF = 2800;
+const MAXIMUM_MMR_CERTAIN_DIFF = 2950;
+
 
 function getMMRDisparity(mmr1, mmr2) {
     if (mmr1 < 0 || mmr2 < 0) {
@@ -19,8 +21,11 @@ function getMMRDisparity(mmr1, mmr2) {
     }
 
     let diff = mmr1 - mmr2;
-    if (diff > MAXIMUM_MMR_DIFF) {
+
+    if (diff > MAXIMUM_MMR_CERTAIN_DIFF) {
         return {hasDisparity:true, reason:"MMR_DIFFERENCE", mmr1, mmr2};
+    } else if (diff > MAXIMUM_MMR_DIFF) {
+        return {hasDisparity:true, reason:"MMR_DIFFERENCE_UNCERTAIN", mmr1, mmr2};
     }
 
     return {};
@@ -33,10 +38,8 @@ function MMRToRankAndStars(mmr) {
     if (mmr < 0) {
         return {rank:0, stars:0};
     } else if (mmr >= IMMORTAL_MMR - 10) {
-        console.log("****")
         return {rank:8, stars:0};
     } else if (mmr >= MMRs[MMRs.length-1] &&  mmr < IMMORTAL_MMR - 10) {
-        console.log("aqui nao")
         return {rank:7, stars:5};
     }
 
@@ -44,7 +47,6 @@ function MMRToRankAndStars(mmr) {
         if (mmr >= MMRs[i] && mmr < MMRs[i+1]) {
             rank = Math.floor((i+1)/5)+1;
             stars = (i + 1)%5;
-            console.log("aaaaa")
             return {rank, stars};
         }
     }
@@ -58,7 +60,6 @@ function rankAndStarsToMMR(rank, stars) {
         return IMMORTAL_MMR;
     }
     let index = Math.min((rank-1)*5 + (stars-1), MMRs.length);
-    console.log({rank, stars})
     return MMRs[index];
 };
 

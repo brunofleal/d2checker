@@ -20,7 +20,6 @@ export default function Medal({rank, stars, mmr}) {
 
   if (mmr) {
     let values = ranksLogic.MMRToRankAndStars(mmr);
-    console.log({values, mmr})
     rank = values.rank;
     stars = values.stars;
   }

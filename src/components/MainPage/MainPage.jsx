@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import MedalSelector from '../MedalSelector';
+import { useState } from 'react';
 import ResultsTable from '../ResultsTable';
 import Team from '../Team';
 import './MainPage.css'

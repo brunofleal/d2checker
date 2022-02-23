@@ -1,18 +1,16 @@
-import { Icon, Box, Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import ranksLogic from '../../service/ranksLogic'
+import WarningTooltip from '../WarningTooltip';
 import Medal from '../Medal';
 import './ResultsTable.css';
 
-import WarningIcon from '@mui/icons-material/Warning';
 import imgOk from '../../resources/misc/success/1.jpg'
 import imgNotOk from '../../resources/misc/fail/1.jpg'
-
 import strings from '../../resources/strings/strings'
 
 
 export default function ResultsTable({MMRs}) {
-    console.log(MMRs)
     const [disparitiesRadiant, setDisparitiesRadiant] = useState([]);
     const [disparitiesDire, setDisparitiesDire] = useState([]);
 
@@ -39,10 +37,6 @@ export default function ResultsTable({MMRs}) {
         setDisparitiesDire(compileListOfDisparities(MMRs.dire));
     }, [MMRs])
 
-    useEffect(()=> {
-        console.log({disparitiesDire})
-        console.log({disparitiesRadiant})
-    }, [disparitiesDire, disparitiesRadiant])
 
 
     return(
@@ -87,7 +81,7 @@ function DisparityList({list, name}) {
                 <div style={{display:'flex', alignItems: "center", justifyContent: "center"}}>
                     <Medal mmr={element.mmr1}></Medal>
                     <Medal mmr={element.mmr2}></Medal>
-                    <WarningIcon sx={{ color: "red", marginLeft: "10px" }}></WarningIcon>
+                    <WarningTooltip reason={element.reason}></WarningTooltip>
                 </div>
                 )
             })}
