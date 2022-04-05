@@ -1,6 +1,6 @@
 # About
 
-webapp for checking dota 2 mmr disparity and party avg
+webapp for checking dota 2 mmr disparity and party avg. Webapp available at: https://brunofleal.github.io/d2checker/
 
 # pre requisites
 
